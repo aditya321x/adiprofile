@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e2e;
+            color: #00aaff;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #00aaff;
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 1 1 calc(45% - 20px);
+            margin: 10px;
+            border: 1px solid #00aaff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            background: #1e1e2e;
+        }
+
+        .skills, .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skills div, .certificates div {
+            background: #1e1e2e;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #00aaff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e2e;
+            color: #00aaff;
+        }
+
+        a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #00aaff;
+            border-radius: 5px;
+            background: #1e1e2e;
+            color: #ffffff;
+        }
+
+        form button {
+            cursor: pointer;
+            background: #00aaff;
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Aditya's Portfolio</h1>
+        <p>web developer | game developer | gamer </p>
+    </header>
+
+    <section style="display: flex; align-items: flex-start;">
+        <img src="Aditya A cyber security.jpg" alt="Sample Photo" width="300" height="400" style="margin-right: 20px;">
+        <div>
+            <h2>About Me</h2>
+            <p>
+                An ambitious and creative individual 🎨 currently pursuing a Bachelor of Engineering in Computer Science and Engineering (Cyber Security) 💻 at SRM Madurai College for Engineering and Technology. With a passion for technology and innovation 🔧, Aditya dreams of becoming a game developer 🎮, inspired by his role model, Tony Stark 🦾.
+            </p>
+            <p>
+                A tech enthusiast ⚡, Aditya actively participates in hackathons and technical events, exploring areas like blockchain, fintech, and cyber security 🔐. He proudly earned a Certificate of Energy Literacy 📜 from the Energy Swaraj Foundation, highlighting his dedication to sustainability 🌱 and energy conservation.
+            </p>
+            <p>
+                Beyond academics, Aditya showcases his creativity by developing websites 🌐 and engaging in digital editing 🎥. Thoughtful and caring 💕
+            </p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Hackathon Team</h2>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <!-- Team Logo -->
+            <img src="WhatsApp Image 2024-10-27 at 11.57.59_36b54b75.jpg" alt="Team Logo" style="max-width: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+        <div>
+            <p><strong>Team Members:</strong></p>
+            <ul>
+                <li>Aditya A</li>
+                <li>Anandharaj G</li>
+                <li>Akash N A</li>
+                <li>Manikandan </li>
+            </ul>
+        </div>
+        <div style="margin-top: 20px;">
+            <p><strong>Hackathon Projects:</strong></p>
+            <ul>
+                <li>
+                    <a href="hackethon projects/AAA FINTECH.pdf" target="_blank" style="text-decoration: none; color: #0056b3;">
+                        📄 Fintech Project (PDF)
+                    </a>
+                </li>
+                <li>
+                    <a href="hackethon projects/Tech Aspirants cs and blockchain.pdf" target="_blank" style="text-decoration: none; color: #0056b3;">
+                        📄 Cybersecurity and Blockchain Project (PDF)
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    
+  
+                               <!-- known technology  -->
+    <head>
+        <!-- Include Font Awesome for icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <style>
+            .skills-section {
+                margin: 20px 0;
+            }
+    
+            .skills {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 20px;
+                margin-top: 20px;
+            }
+    
+            .skill-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 15px;
+                background-color: #333; /* Dark background */
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+    
+            .skill-item:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+    
+            .skill-item img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+    
+            .skill-item span {
+                font-size: 1.1em;
+                font-weight: bold;
+                color: #fff; /* White text for better contrast */
+            }
+    
+            @media (max-width: 600px) {
+                .skills {
+                    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <!-- Python -->
+                <div class="skill-item">
+                    <img src="logos/python.jpeg" alt="Python Logo">
+                    <span>Python</span>
+                </div>
+                <!-- HTML & CSS -->
+                <div class="skill-item">
+                    <img src="logos/html.png" alt="HTML & CSS Logo">
+                    <span>HTML & CSS</span>
+                </div>
+                <!-- Windows -->
+                <div class="skill-item">
+                    <img src="logos/windows 11.png" alt="Windows Logo">
+                    <span>Windows</span>
+                </div>
+                <!-- Cyber Security Basics -->
+                <div class="skill-item">
+                    <img src="logos/cyber security.jpeg" alt="Cyber Security Logo">
+                    <span>Cyber Security Basics</span>
+                </div>
+                <!-- Game Development (Unity) -->
+                <div class="skill-item">
+                    <img src="logos/unity.png" alt="Unity Logo">
+                    <span>Game Development (Unity)</span>
+                </div>
+                <!-- canva -->
+                <div class="skill-item">
+                    <img src="logos/canvas.jpeg" alt="Canva Logo">
+                    <span>Canvas</span>
+                </div>
+                <!-- visual sudio code -->
+                <div class="skill-item">
+                    <img src="logos/download.jpeg" alt="vs code Logo">
+                    <span>VS Code</span>
+                </div>
+                <!-- Picsart -->
+                <div class="skill-item">
+                    <img src="logos/picsart.jpeg" alt="Picsart Logo">
+                    <span>picsart</span>
+                </div>
+                <!-- photo shop -->
+                <div class="skill-item">
+                    <img src="logos/photo shop.png" alt="photo shop Logo">
+                    <span>Photoshop</span>
+                </div>
+                <!-- kinemaster -->
+                <div class="skill-item">
+                    <img src="logos/kinemaster.jpeg" alt="kinemaster Logo">
+                    <span>Kinemaster</span>
+                </div>
+                
+            </div>
+        </section>
+    </body>
+    
+    
+                            <!--   certificate showcase -->
+    <head>
+        <style>
+            .certificates {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                flex-wrap: wrap; /* Wrap items for responsiveness */
+                margin: 20px 0;
+            }
+    
+            .certificate-item {
+                text-align: center;
+                width: 30%; /* Adjust as needed */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+                background-color: #f9f9f9;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+    
+            .certificate-item img {
+                width: 100%;
+                height: auto; /* Maintain aspect ratio */
+                cursor: pointer;
+            }
+    
+            .certificate-item a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                display: block;
+                padding: 10px 0;
+            }
+    
+            .certificate-item:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            }
+    
+            @media (max-width: 800px) {
+                .certificate-item {
+                    width: 45%; /* Adjust for smaller screens */
+                }
+            }
+    
+            @media (max-width: 600px) {
+                .certificate-item {
+                    width: 100%; /* Stack items vertically */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h2>Certificates</h2>
+            <div class="certificates">
+                <!-- Certificate 1 -->
+                <div class="certificate-item">
+                    <a href="certificate 1.pdf.pdf" target="_blank">
+                        <img src="certificate 1.jpg" alt="Certificate of Energy Literacy">
+                    </a>
+                    <a href="certificate 1.pdf.pdf" target="_blank">Certificate of Energy Literacy (PDF)</a>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="certificate-item">
+                    <a href="path-to-certificate-2.pdf" target="_blank">
+                        <img src="path-to-certificate-2-image.jpg" alt="Certificate of Python Basics">
+                    </a>
+                    <a href="path-to-certificate-2.pdf" target="_blank">Certificate of Python Basics (PDF)</a>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="certificate-item">
+                    <a href="certificate 2.0.pdf.pdf" target="_blank">
+                        <img src="certificate 2.0.png" alt="Hackathon Participation Certificate">
+                    </a>
+                    <a href="certificate 2.0.pdf.pdf" target="_blank">Hackathon Participation Certificate (PDF)</a>
+                </div>
+            </div>
+        </section>
+    </body>
+    
+                                            <!-- contact informations -->
+    <head>
+        <!-- Include Font Awesome for icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <style>
+            .contact-section {
+                display: flex;
+                justify-content: space-between; /* Space between items */
+                gap: 20px; /* Space between items */
+                margin: 20px 0;
+                flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            }
+    
+            .contact-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column; /* Stack icon and text vertically */
+                gap: 10px; /* Space between icon and text */
+                padding: 20px;
+                border-radius: 12px; /* Rounded corners */
+                text-decoration: none;
+                color: #fff; /* White text for better contrast */
+                width: 18%; /* Set width for uniform box size */
+                box-sizing: border-box;
+                transition: transform 0.3s, box-shadow 0.3s;
+                background: #333; /* Neutral dark background for all boxes */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            }
+    
+            .contact-item:hover {
+                transform: scale(1.05); /* Slight zoom effect */
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+            }
+    
+            .contact-item i {
+                font-size: 2.5em; /* Bigger icon size */
+                padding: 15px; /* Add padding around the icon */
+                border-radius: 50%; /* Circle shape for the icon */
+            }
+    
+            /* Specific colors for each icon */
+            .contact-item i.whatsapp {
+                background-color: #25D366; /* WhatsApp green */
+                color: #fff;
+            }
+    
+            .contact-item i.email {
+                background-color: #EA4335; /* Email red */
+                color: #fff;
+            }
+    
+            .contact-item i.linkedin {
+                background-color: #0077B5; /* LinkedIn blue */
+                color: #fff;
+            }
+    
+            .contact-item i.instagram {
+                background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF); /* Instagram gradient */
+                color: #fff;
+            }
+    
+            .contact-item i.facebook {
+                background-color: #1877F2; /* Facebook blue */
+                color: #fff;
+            }
+    
+            .contact-item span {
+                font-size: 1.1em; /* Slightly larger text */
+                font-weight: bold; /* Make text bold for emphasis */
+            }
+    
+            @media (max-width: 800px) {
+                .contact-item {
+                    width: 30%; /* Adjust width for medium screens */
+                }
+            }
+    
+            @media (max-width: 600px) {
+                .contact-item {
+                    width: 100%; /* Stack items vertically on smaller screens */
+                    margin-bottom: 10px; /* Extra space on smaller screens */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h2>Contact</h2>
+            <p>Reach me on:</p>
+            <div class="contact-section">
+                <a href="https://wa.me/8248082498" target="_blank" class="contact-item">
+                    <i class="fab fa-whatsapp whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="adityaalex631@gmail.com" target="_blank" class="contact-item">
+                    <i class="fas fa-envelope email"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/aditya1465?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/mr_aditya_2k06?igsh=MXV3dDU4OGNhZmFoZw==" target="_blank" class="contact-item">
+                    <i class="fab fa-instagram instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61568996931325&mibextid=ZbWKwL" target="_blank" class="contact-item">
+                    <i class="fab fa-facebook facebook"></i>
+                    <span>Facebook</span>
+                </a>
+            </div>
+        </section>
+    </body>
+    
+    
+
+
+    
+    <section>
+        <h2>Feedback Form</h2>
+        <div style="text-align: center; margin: 20px 0;">
+            <p>I value your feedback! Please fill out the form below:</p>
+            <!-- Embed Google Form -->
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSd-rbh4ENoBFVM-ICRoIQQkUKxa1N2reCBm9onenMXR_Ib34Q/viewform?usp=sharing" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading…
+            </iframe>
+        </div>
+    </section>
+    
+        
+
+    <footer>
+        <p>&copy; 2025 Aditya's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
